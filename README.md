@@ -60,6 +60,7 @@ Example commands:
 Jarvis/
 ├── main.py            # main assistant logic
 ├── musicLibrary.py    # song name -> link dictionary
+├── client.py
 └── requirements.txt
 ```
 

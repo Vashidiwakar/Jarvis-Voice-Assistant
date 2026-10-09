@@ -1,6 +1,0 @@
-# This is a temporary audio file made by speak() in main.py
-# Each time Jarvis speaks, the code does this:
-
-# gTTS(text) converts the text to speech and tts.save('temp.mp3') saves it as temp.mp3.
-# pygame plays it.
-# os.remove("temp.mp3") deletes it afterward.

@@ -27,11 +27,20 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Set your API keys (never commit them to the repo):
+## API Keys
+
+This project needs two API keys:
+- **OpenAI API key** for AI replies: https://platform.openai.com/api-keys
+- **NewsAPI key** for news headlines: https://newsapi.org/
+
+After cloning, open `main.py` and replace the placeholders with your own keys:
+
+```python
+newsApi = "<Your_News_Api>"                  # paste your NewsAPI key here
+client = OpenAI(api_key="<Your Key Here>")   # paste your OpenAI key here
 ```
-$env:NEWS_API_KEY = "your-news-key"
-$env:OPENAI_API_KEY = "your-openai-key"
-```
+
+> **Warning:** Never commit your real keys to GitHub.
 
 ## Usage
 ```
@@ -51,8 +60,7 @@ Example commands:
 Jarvis/
 ├── main.py            # main assistant logic
 ├── musicLibrary.py    # song name -> link dictionary
-├── requirements.txt
-└── README.md
+└── requirements.txt
 ```
 
 ## Tech Stack
